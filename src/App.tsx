@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react'
 import { ChatClient } from './chat-client';
 
-const URL = 'wss://ksacp213g4.execute-api.ap-south-1.amazonaws.com/production';
+const URL = 'wss://fqw073merj.execute-api.ap-south-1.amazonaws.com/production';
 
 const App = () => {
 
   const socket = useRef<WebSocket | null>(null);
-  const [isConnected, setIsConnected] = useState(false);
+  const [isConnected, setIsConnected] = useState(false);  
   const [members, setMembers] = useState([]);
   const [chatRows, setChatRows] = useState<React.ReactNode[]>([]);
 
